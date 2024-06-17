@@ -1,0 +1,12 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node", // nous voulons déboguer du node
+            "request": "launch", // nous voulons exécuter la commande de lancement de node
+            "name": "Launch node test", // ajouter un nom a la conf
+            "program": "${workspaceFolder}/index.js" // indiquer ici
+        }
+    ]
+}
