@@ -1,0 +1,73 @@
+/* ProductGrid.css */
+
+
+.product-grid {
+  display: grid;
+  gap: 16px; /* ou votre espacement préféré entre les produits */
+}
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px;
+    line-height:0.8;
+  }
+  .spaced-element {
+    display: block; /* Ensures elements are block-level */
+    margin-bottom: 0px; /* Adds 20px space below each element */
+  }
+
+.spacing-div {
+  height: 200px;
+}
+
+  .product img {
+    width: 30%;
+    height: auto;
+  }
+  
+  .product-info {
+    margin-top: 10px;
+  }
+  
+  .product h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .product p {
+    margin: 5px 0;
+  }
+  .ajout-panier {
+    font-size:13px;
+    border: 1px solid black;
+    background-color:gray;
+  }
+  .ajout-panier :hover{
+    font-size:13px;
+    border: 1px solid black;
+    background-color:green;
+  }
+  .ajout-panier :active {
+    font-size:13px;
+    border: 1px solid black;
+    background-color:red;
+  }
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(1, 1fr);
+      padding-bottom: 200px; /* Ajoutez un padding en bas pour espacer le footer */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr); /* Trois colonnes en grand écran */
+    }
+  }
+  

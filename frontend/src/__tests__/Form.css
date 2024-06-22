@@ -1,0 +1,122 @@
+.articles-gallery {
+    left:400px;
+    top:200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Ajoutez d'autres styles de galerie ici */
+  }
+  
+  .form {
+    width: 100%;
+    /* Ajoutez d'autres styles de formulaire ici */
+  }
+  
+
+.hidden {
+    display: none;
+}
+fieldset {
+    position:absolute;
+    background: cyan;
+    border: 5px solid blue;
+    border-top:5px;
+    left:400px;
+    height:auto;
+    border-radius: 7px;
+}
+.filtre {
+    border-left: 20px;
+    /* Ajustez la valeur selon vos besoins */
+}
+.form label {
+    display: block;
+    margin-bottom: 0px;
+    color: red;
+}
+
+/* Dropdown button */
+.form .mainmenubtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    /* Réduire la marge entre les champs et le bouton de menu déroulant */
+}
+
+/* Checkbox inputs */
+form input[type="checkbox"] {
+    margin-right: 0px;
+    /* Réduire l'espace entre les cases à cocher */
+    color: red;
+}
+
+.form .dropdown-child {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px;
+    /* Ajustez selon vos besoins */
+    margin-top: 5px;
+    /* Réduire la marge entre les options du menu déroulant */
+    margin-left: -5px;
+    /* Réduire la distance entre les cases à cocher et le menu déroulant */
+}
+
+.form .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.categories {
+    /* Styles pour les écrans de grande taille */
+    font-size: 20px;
+    /* Autres styles pour les grands écrans */
+}
+
+
+/* Ajoutez des règles de style spécifiques pour les écrans de petite taille */
+@media (max-width: 768px) {
+    .categories {
+        /* Styles pour les écrans de petite taille */
+        font-size: 16px;
+        /* Par exemple */
+                color: blue;
+    }
+        .form input[type="checkbox"] {
+            display: none;
+        }
+
+     #categories-titre::after {
+        content: " +";
+         /* Ajoutez un "+" après le libellé "Catégories" */
+         text-decoration: underline;
+
+    }
+    .categories {
+            text-decoration: underline;
+    }
+    .form label {
+        display: none;
+    }
+}
+
+
+/* Ajoutez des règles de style spécifiques pour les écrans de taille moyenne */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .categories {
+        /* Styles pour les écrans de taille moyenne */
+        font-size: 18px;
+        /* Par exemple */
+    }
+}
+
+.listProducts {
+    top:100px;
+    left:400px;
+}

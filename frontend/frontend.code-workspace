@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../C41/frontend"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

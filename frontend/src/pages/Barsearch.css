@@ -1,0 +1,72 @@
+
+body {position:relative;}
+.image {
+    left:20px;
+    width:30px;
+    height:auto;
+    background-color:rgb(238, 223, 223);
+}
+.barsearch-left,
+.barsearch-center,
+.barsearch-right {
+    flex: 1;
+    /* Distribuer l'espace disponible de manière égale entre les éléments */
+    display: flex;
+    /* Utiliser Flexbox */
+    justify-content: center;
+    /* Aligner les éléments horizontalement au centre */
+}
+
+.barsearch {
+    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:val(--gray);
+    width:100%;
+    height:auto;
+    z-index: 999;
+}
+.barsearch-center {
+    width:800px;
+}
+.icon-flech-left {
+    left:50px;
+}
+.barsearch-left {
+    left:100px;
+}
+.barsearch-left {
+    left:150px;
+}
+.barsearch-left {
+    left:200px;
+}
+.barsearch-left .fas,
+.barsearch-center .fas,
+.barsearch-right .fas {
+    flex: 1;
+    text-align: center;
+    color:black;
+}
+.barsearch-left .fas :hover,
+.barsearch-right .fas :hover {
+    color:blue;
+}
+.barsearch-left .fas :active,
+.barsearch-right .fas :active,
+.barsearch-right .fas :active,
+.barsearch-right .fas :active {
+    color: red;
+}
+.icon-loupe {
+    right:0;
+}
+
+@media screen and (max-width: 768px) {
+    .barsearch {
+        flex-direction: row; /* Afficher les éléments en ligne */
+        align-items: center; /* Aligner les éléments horizontalement */
+    }
+
+}

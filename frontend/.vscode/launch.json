@@ -1,0 +1,38 @@
+<<<<<<< HEAD
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "vscode-edge-devtools.debug",
+      "request": "launch",
+      "name": "Launch Microsoft Edge and open the Edge DevTools",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/src",
+      "sourceMaps": true,
+      "breakOnLoad": true,
+      "trace": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/app.js"
+    }
+  ]
+}
+
+=======
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node", // nous voulons déboguer du node
+            "request": "launch", // nous voulons exécuter la commande de lancement de node
+            "name": "Launch node test", // ajouter un nom a la conf
+            "program": "${workspaceFolder}/index.js" // indiquer ici
+        }
+    ]
+}
+>>>>>>> 69eec3a52a9c02f79e03fa4f816b61cb10b51f08

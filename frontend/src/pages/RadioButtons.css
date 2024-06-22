@@ -1,0 +1,58 @@
+
+.form-check {
+    top:430px;
+    margin-right: 10px;
+   color:red;
+   margin-bottom:1rem;
+   position:relative;
+}
+                html,
+                body {
+                    height: 100%;
+                    margin: 0;
+                }
+        
+                .d-flex {
+                    display: flex;
+                }
+        
+                .mt-5 {
+                    margin-top: 5rem;
+                }
+        
+                .mt-auto {
+                    margin-top: auto;
+                }
+        
+                .w-100 {
+                    width: 100%;
+                }
+        
+                .py-3 {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+        
+                .text-center {
+                    text-align: center;
+                }
+.button {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.7;
+    /* Opacity on hover */
+    color:blue;
+}
+.button:active {
+    opacity: 0.7;
+    /* Opacity on hover */
+    color: red;
+}

@@ -1,0 +1,70 @@
+:root {
+  --top-barsearch: 0px;
+  --height-barsearch: 40px;
+  --top-nav: var(--height-barsearch);
+  --bottom-btn-radio: 300px;  
+  --gray: rgb(192, 182, 182);
+  --red: red;
+}
+
+/* Réinitialiser les styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Styles du conteneur de l'application */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Styles de l'en-tête */
+.header {
+  position: fixed;
+  top: var(--top-barsearch); /* Utilisez la variable personnalisée pour la position en haut */
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ajustez z-index si nécessaire */
+  background-color: #ffffff; /* Ajustez la couleur d'arrière-plan si nécessaire */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoutez une ombre si nécessaire */
+  height: var(--height-barsearch); /* Définissez la hauteur en utilisant la variable personnalisée */
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-md-3, .col-md-9 {
+  width: 100%;
+}
+
+/* Styles du pied de page */
+.footer-container {
+  background-color: var(--gray); /* Utilisez la variable personnalisée pour la couleur de fond */
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media query pour les écrans plus larges */
+@media (min-width: 768px) {
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+}

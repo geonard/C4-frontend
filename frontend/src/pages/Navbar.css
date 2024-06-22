@@ -1,0 +1,11 @@
+
+@import url('../App.css');
+
+.navbar-custom {
+    position: absolute;
+    top: var(--top-nav);  /* Décale la Navbar de 100 pixels vers le bas */
+    background-color: rgb(207, 155, 155);
+    color: gray;
+    width:100%;
+    height:auto;
+}

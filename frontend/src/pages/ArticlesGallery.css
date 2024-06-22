@@ -1,0 +1,40 @@
+.gallery-container {
+    width: 100%;
+  }
+  
+  .gallery-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .gallery-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .gallery-item img {
+    display: block;
+    margin: 10px auto;
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-item {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-item {
+      width: 100%;
+    }
+  }
+  

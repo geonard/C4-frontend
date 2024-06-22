@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"path": "../../FullStack_Ecommerce_App-main1/backend/my_project"
+	},
+	{
+		"path": "../../FullStack_Ecommerce_App-main1"
+	},
+	{
+		"path": "../../FullStack_Ecommerce_App-main1/frontend"
+	}
+],
+  "settings": {
+    "workbench.settings.useSplitJSON": false,
+    "workbench.settings.openDefaultSettings": true
+  }
+}
