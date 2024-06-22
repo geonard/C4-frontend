@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .vertex {
+            position: absolute;
+            border: 1px solid;
+            text-align: center;
+            line-height: 40px;
+            box-sizing: border-box;
+        }
+        .edge {
+            position: absolute;
+            stroke: black;
+            fill: none;
+        }
+    </style>
+    <title>Graph Representation</title>
+</head>
+<body>
+    <div id="graph-container" style="position: relative; width: 413px; height: 583px;">
+        <div class="vertex" style="left: 20px; top: 10px; width: 80px; height: 40px; background-color: #fff2cc; border-color: #d6b656;"></div>
+        <div class="vertex" style="left: 141px; top: 10px; width: 80px; height: 40px; background-color: #d5e8d4; border-color: #82b366;"></div>
+        <div class="vertex" style="left: 262px; top: 10px; width: 80px; height: 40px; background-color: #f8cecc; border-color: #b85450;"></div>
+        <svg class="edge" width="100%" height="100%">
+            <line x1="100" y1="30" x2="141" y2="30" stroke="#000" marker-end="url(#arrowhead)" />
+            <line x1="221" y1="30" x2="262" y2="30" stroke="#000" marker-end="url(#arrowhead)" />
+        </svg>
+    </div>
+    <svg width="0" height="0">
+        <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" />
+            </marker>
+        </defs>
+    </svg>
+</body>
+</html>
